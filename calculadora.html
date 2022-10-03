@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculadora.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+      <div id="div1">
+    <h1 contenteditable="true"> CALCULADORA DE EJERCICIOS </h1>
+</div>
+    
+    <div id="div2">
+    <table id="tbCalculadora">
+    <tr>
+        <td colspan="5"><input id="result" placeholder="Ingrese datos"></input></td>
+    </tr>
+    <tr>
+        <td><button id="btn_divisores" onclick="cal.divisores(this)">Divisores</button></td>
+        <td><button id="btn_invertirNumero" onclick="cal.invertirNumero()">Invertir Numero</button></td>
+        <td><button id="btn_primo" onclick="cal.primo()">Primo</button></td>
+        <td><button id="btn_perfecto" onclick="cal.perfecto()">Perfecto</button></td>
+        <td><button id="btn_fibonacci" onclick="cal.fibonacci()">Fibonnaci</button></td>
+    </tr>
+    <tr>
+        <td><button id="base10_2" onclick="cal.base10_2()">Base 10 a 2</button></td>
+        <td><button id="base10_16" onclick="cal.base10_16()">Base 10 a 16</button></td>
+        <td><button id="btn_base10_8" onclick="cal.base10_8()">Base 10 a 8</button></td>  
+        <td><button id="btn_base2_10" onclick="cal.base2_10()">Base 2 a 10</button></td>
+        <td><button id="btn_base2_16" onclick="cal.base2_16()">Base 2 a 16</button></td>
+    </tr>
+    <tr>
+        <td><button id="btn_Contar palabras" onclick="cal.contarpalabras()">Contar palabras</button></td> 
+        <td><button id="btn_palindroma" onclick="cal.palindroma()">Palindroma</button></td> 
+        <td><button id="btn_Invertir_frase" onclick="cal.invertirfrase()">invertir Frase</button></td>
+        <td><button id="btn_contar_caracteres" onclick="cal.contarcaracteres()">Contar Caracteres</button></td>
+        <td><button id="btn_buscar_cadena" onclick="cal.buscarcadena()">Buscar cadena</button></td>
+    </tr>
+    <tr>
+        <td><button id="btn_mayor_arreglo" onclick="cal.mayorarreglo()">Mayor Arreglo</button></td>
+        <td><button id="btn_promedio" onclick="cal.promedio()">Promedio Arreglo</button></td>
+        <td><button id="btn_buscarArreglo" onclick="cal.buscarArreglo()">Buscar Arreglo</button></td>
+        <td><button id="btn_EliminarArreglo" onclick="cal.EliminarArreglo()">Eliminar Elemento Arreglo</button></td>
+        <td><button id="btn_ InsertarArreglo" onclick="cal. InsertarArreglo()">Insertar Elemento Arreglo</button></td>
+    </tr>
+    <tr>
+        <td id="tb_btn_borrar" colspan="5"><button id="btn_borrar" onclick="cal.Limpiar()">AC</button></td>
+    </tr>
+    </table>
+</div>
+    <script src="calculadora.js"> </script>
+</body>
+</html>

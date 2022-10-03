@@ -1,0 +1,146 @@
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top:  1px;
+    color: #5d7dc4;
+    font-family: 'Varela', sans-serif;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0,20em;
+    outline: none;
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+      color: #b1b1b1;
+      box-shadow: nome;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+      color: rgb(13, 13, 13);
+      text-shadow: 0 0 10px #64b1c8,
+      0 0 20px #b8bf2f,
+      0 0 40px #a99c9c,
+      0 0 80px #4b03f42e,
+      0 0 160px #877e1e,
+      0 0 10px #d90c0cdd,
+    }
+  }
+  
+  
+  
+  button {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: #6a9bb9;
+    
+    padding: calc(.05em + var(--s)) calc(.4em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(128, 133, 150, 0) 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid rgba(233, 227, 227, 0);
+    outline-offset: .2em;
+    margin: 0 auto;
+  }
+  button:hover,
+  button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  button:active {
+    background: var(--c);
+    color: rgb(20, 20, 20);
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    place-content: center;
+    background-image: url('https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-25.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    margin: .0em;
+  }
+   td, tr {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 0% 1% 1% 0%;
+  }
+
+
+table {
+  top: 80px;
+  align-items: center;
+  position:relative;
+margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  border-collapse: collapse;
+}
+
+div2{
+    position: absolute;
+    margin-top: 100px;
+}
+
+  input { 
+    width : 90%; 
+    height  : 100%; 
+    padding : 1% 0% 0% 0%;  
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    color: #050506;
+    background-color: #5d7ec431;
+    border-radius: 5px;
+    outline: none;
+    color:rgb(255, 255, 255);
+    
+   /* transition: 0.5s;*/
+
+  }
+  input:valid
+  input:focus
+  {
+    color: rgb(255, 255, 255);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0,65em;
+    padding: 0 10px;
+    background: #304862;
+    border-left: 1px solid #c6c5ce;
+    border-right: 1px solid #3e34b6;
+   /* letter-spacing: 0.2em;*/
+
+  }
+  input:valid,
+  input:focus
+  {
+    border: 1px solid #44489e
+  }
+ 
+
+
+  btn_borrar { 
+    width : 90%;
+    position: absolute; 
+  }
+
